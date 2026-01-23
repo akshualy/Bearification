@@ -15,6 +15,9 @@ from loguru import logger
 from obearon.database import crud
 
 
+PLATFORM_REGEX = re.compile(r"^\(\w+\)")
+
+
 class Mail:
     """
     Class to cache and interact with the mail instance.
@@ -127,6 +130,8 @@ class Mail:
             self._wrap_imap_calls(self.mail.store, message_id, "+FLAGS", "\\Deleted")
 
             warframe_name = subject.replace(" has sent you a message", "")
+            warframe_name = PLATFORM_REGEX.sub("", warframe_name)
+
             warframe_subject = warframe_message_subject_tags[0].text.strip()
             warframe_message = warframe_message_content_tags[0].text.strip()
 
