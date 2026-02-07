@@ -24,7 +24,7 @@ Copy [the example env file](.env.example) into a file called `.env` and fill in 
 |----------------------|-----------------------------------------------------------|
 | EMAIL_USERNAME       | The email username                                        |
 | EMAIL_PASSWORD       | The email password                                        |
-| CREATE_MESSAGE_LINK  | Link that should be sent to create a message in the forum |
+| USER_ID              | The Forum ID of the Warframe account you created.         |
 | DISCORD_TOKEN        | The Discord token for the Discord bot                     |
 
 ## Running
