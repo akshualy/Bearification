@@ -91,7 +91,7 @@ class VerifyView(discord.ui.View):
             content=(
                 f"1. Go to <https://forums.warframe.com/messenger/compose/?to={os.environ["USER_ID"]}&title={verification_code}>.\n"
                 f"2. Enter anything in the message part.\n"
-                "3. Send the message and **wait up to 2 minutes**[.](https://i.imgur.com/caLFbWY.png)\n\n"
+                "3. Send the message and **wait up to 2 minutes**[.](https://i.imgur.com/nYFEECd.png)\n\n"
                 "If you have any issues, send a message in <#1279139946480926872> or to <@1268317208409538632>!"
             ),
             ephemeral=True,
