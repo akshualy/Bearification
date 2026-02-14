@@ -120,7 +120,7 @@ class Mail:
             soup = BeautifulSoup(body, "html.parser")
             warframe_message_subject_tags = soup.find_all("h2")
             warframe_message_content_tags = soup.find_all("div")
-            if len(warframe_message_subject_tags) == 0 or len(warframe_message_subject_tags) == 0:
+            if len(warframe_message_subject_tags) == 0 or len(warframe_message_content_tags) == 0:
                 logger.warning(
                     f"The Warframe message body changed. "
                     f"Soup tag finding needs to be adjusted for the following:\n{body}"
